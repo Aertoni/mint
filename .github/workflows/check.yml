@@ -30,3 +30,6 @@ jobs:
 
       - name: Run tests
         run: cargo test --locked --all-features --all-targets
+
+      - name: Build Linux release workspace
+        run: cargo build --locked --profile dist --workspace --target x86_64-unknown-linux-gnu

@@ -4,6 +4,11 @@
 
 ## [Unreleased] - ReleaseDate
 
+### Internal Changes
+
+- Fix Linux release builds by restricting the Windows hook and its dependencies to Windows targets.
+- Build the Linux release workspace in CI to catch packaging failures.
+
 ## [0.2.11] - 2026-10-12
 
 ### General

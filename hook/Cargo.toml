@@ -10,7 +10,7 @@ edition.workspace = true
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
-[dependencies]
+[target.'cfg(windows)'.dependencies]
 anyhow.workspace = true
 repak.workspace = true
 serde.workspace = true
