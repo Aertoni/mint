@@ -4,6 +4,8 @@
 
 ## [Unreleased] - ReleaseDate
 
+## [0.2.11] - 2026-10-12
+
 ### General
 
 - Fix unintentionally linking to libssl on Linux. This used to prevent some users on various Linux
@@ -23,6 +25,7 @@
 
 ### Core Functionality
 
+- Fix mod.io installations failing with HTTP 403 due to the administrator-only visibility filter.
 - Implement Asset Registry handling. This should be sufficient for most mods that were previously
   not usable with mint due to the lack of Asset Registry handling.
 - Implement self-update
@@ -33,6 +36,8 @@
 
 ### Internal Changes
 
+- Update GitHub Actions runners and checkout, run tests, and remove the Clippy Checks API dependency.
+- Fix compiler and Clippy warnings on current Rust nightly.
 - Significantly optimize cache updates (first update will still be a full update)
 - Allow overriding appdata dir via CLI flag
 - Rename cache and config directories from `drg-mod-integration` to `mint` and default to legacy
@@ -66,7 +71,8 @@
 - Fix including same asset paths with different casings causing Unreal Engine to load neither ([#29](https://github.com/trumank/mint/issues/29))
 
 <!-- next-url -->
-[Unreleased]: https://github.com/trumank/mint/compare/v0.2.10...HEAD
+[Unreleased]: https://github.com/Aertoni/mint/compare/v0.2.11...HEAD
+[0.2.11]: https://github.com/Aertoni/mint/compare/v0.2.10...v0.2.11
 [0.2.10]: https://github.com/trumank/mint/compare/v0.2.9...v0.2.10
 [0.2.9]: https://github.com/trumank/mint/compare/v0.2.8...v0.2.9
 [0.2.8]: https://github.com/trumank/mint/compare/v0.2.7...v0.2.8
