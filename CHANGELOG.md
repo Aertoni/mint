@@ -4,6 +4,8 @@
 
 ## [Unreleased] - ReleaseDate
 
+## [0.2.12] - 2026-10-12
+
 ### Internal Changes
 
 - Fix Linux release builds by restricting the Windows hook and its dependencies to Windows targets.
@@ -76,7 +78,8 @@
 - Fix including same asset paths with different casings causing Unreal Engine to load neither ([#29](https://github.com/trumank/mint/issues/29))
 
 <!-- next-url -->
-[Unreleased]: https://github.com/Aertoni/mint/compare/v0.2.11...HEAD
+[Unreleased]: https://github.com/Aertoni/mint/compare/v0.2.12...HEAD
+[0.2.12]: https://github.com/Aertoni/mint/compare/v0.2.11...v0.2.12
 [0.2.11]: https://github.com/Aertoni/mint/compare/v0.2.10...v0.2.11
 [0.2.10]: https://github.com/trumank/mint/compare/v0.2.9...v0.2.10
 [0.2.9]: https://github.com/trumank/mint/compare/v0.2.8...v0.2.9
